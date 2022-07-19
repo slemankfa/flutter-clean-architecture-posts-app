@@ -55,7 +55,7 @@ Future<void> init() async {
       () => PostLocalDataSourceImpl(sharedPreferences: sl()));
 
   //! Core
-  sl.registerLazySingleton<NetworkInfoImpl>(() => NetworkInfoImpl(sl()));
+  sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(sl()));
   //! External
   final SharedPreferences sharedPreferences =
       await SharedPreferences.getInstance();

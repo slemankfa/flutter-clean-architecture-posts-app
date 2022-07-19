@@ -30,7 +30,7 @@ class PostsBloc extends Bloc<PostsEvent, PostsState> {
 
   PostsState _mapFailuersOrPostsToState(Either<Failure, List<Post>> either) {
     return either.fold(
-      (failure) => ErrorState(message: _mapFailureToMessage(failure)),
+      (failure) => ErrorPostState(message: _mapFailureToMessage(failure)),
       (posts) => LoadedPostsState(posts: posts),
     );
   }
