@@ -1,5 +1,5 @@
-import 'package:clean_arch_posts_app/features/posts/presentation/bloc/posts/posts_bloc.dart';
-import 'package:clean_arch_posts_app/features/posts/presentation/pages/post_add_update_page.dart';
+import '../bloc/posts/posts_bloc.dart';
+import 'post_add_update_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

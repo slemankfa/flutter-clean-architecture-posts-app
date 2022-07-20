@@ -1,7 +1,7 @@
-import 'package:clean_arch_posts_app/features/posts/domain/repositories/post_repository.dart';
 import 'package:dartz/dartz.dart';
 
 import '../../../../core/error/failures.dart';
+import '../repositories/post_repository.dart';
 
 class DeletePostsUseCase {
   final PostRepository repository;

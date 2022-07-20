@@ -1,10 +1,10 @@
-import 'package:clean_arch_posts_app/features/posts/domain/entities/post.dart';
-import 'package:clean_arch_posts_app/features/posts/presentation/bloc/add_delete_update_post/add_delete_update_post_bloc.dart';
-import 'package:clean_arch_posts_app/features/posts/presentation/widgets/post_add_update_page/text_form_field_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../domain/entities/post.dart';
+import '../../bloc/add_delete_update_post/add_delete_update_post_bloc.dart';
 import 'form_submit_btn.dart';
+import 'text_form_field_widget.dart';
 
 class FormWidget extends StatefulWidget {
   final bool isUpdatePost;

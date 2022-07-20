@@ -1,7 +1,7 @@
-import 'package:clean_arch_posts_app/features/posts/domain/entities/post.dart';
 import 'package:dartz/dartz.dart';
 
 import '../../../../core/error/failures.dart';
+import '../entities/post.dart';
 
 abstract class PostRepository {
   Future<Either<Failure, List<Post>>> getAllPosts();
